@@ -38,7 +38,7 @@ class ConnectMsServer():
                 break
             return avg_of_products
 
-    def return_avg_unite_price_products(self):
+    def return_avg_unit_price_products(self):
         # Query
         query = self.__filter_query('SELECT * FROM Products')
         # Sum of all unit price

@@ -9,7 +9,7 @@ password = 'Passw0rd2018'
 
 # Establish a connection
 conn_nwdb = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+password)
-print(conn_nwdb)
+#print(conn_nwdb)
 
 # Create a cursor
 # Allows us to execute read only queries on the db
@@ -26,7 +26,7 @@ row = cursor.fetchone()
 # .fetchall() --- this is bad, we don't use this
 rows = cursor.execute("SELECT * FROM Customers").fetchall()
 #print(rows)
-print(len(rows))
+#print(len(rows))
 
 # Fetch some data using for loop
 
